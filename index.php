@@ -575,7 +575,7 @@
 				</div>
 				<div class="service-content">
 					<p>Our network of factory trained Accredited Applicators assure you that your project will be installed to the highest standard, on time and on budget. </p>
-					<a href="#contact-us" class="btn product-btn">Contact Us</a>
+					<a href="#contact-us" class="btn ghost-btn">Contact Us</a>
 				</div>
 			</div>
 

@@ -1,7 +1,15 @@
 /*FONTS*/
 @font-face{
-	src:url(../fonts/Charter-Bold.ttf);
-	font-family: Charter-Bold;
+	src:url(../fonts/AvenirNextLTPro-Bold.otf);
+	font-family: "AvenirNextLTPro-Bold";
+}
+@font-face{
+	src:url(../fonts/AvenirNextLTPro-Regular.otf);
+	font-family: "AvenirNextLTPro-Regular";
+}
+@font-face{
+	src:url(../fonts/PlayfairDisplay-Regular.ttf);
+	font-family: "PlayfairDisplay-Regular";
 }
 /*GENERAL CSS*/
 html{
@@ -10,15 +18,15 @@ html{
 body{
 	color: #333333;
 }
-h1,h2,h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
+	font-family: "AvenirNextLTPro-Bold";
 	margin:0px;
 }
-h1{
+h1, .display-h1{
 	font-size: 38px;
 	line-height: 57px;
 	letter-spacing: 1.5px;
-}
-h2{important;
+	font-family: "PlayfairDisplay-Regular";
 }
 h3{
 	font-size: 24px;
@@ -37,8 +45,8 @@ h5{
 	letter-spacing: 0.4px;
 }
 p{
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 27px;
 	letter-spacing: 0.01px;
 	color: #333333;
 	margin: 0px;
@@ -46,7 +54,7 @@ p{
 a.btn{
 	height: 45px;
 	line-height: 22px;
-	
+	font-family: "AvenirNextLTPro-Bold";
 	font-size: 14px;
 }
 .orange-color{
@@ -247,7 +255,8 @@ a.btn{
     padding: 8px 25px;
 }
 .navbar .navbar-nav .nav-item .nav-link.nav-btn:hover{
-	color: #FF7C19;
+	background-color: #FF7C19;
+	border-color: #FF7C19;
 }
 .navbar .navbar-toggler .navbar-toggler-icon{
 	background-color: #ffffff;
@@ -462,7 +471,7 @@ a.btn{
 	background-size: cover;
 	padding: 100px 0px;
 }
-.service-heading h1{
+.service-heading h2{
 	color: #ffffff;
 	text-transform: capitalize;
 	margin-bottom: 25px;
@@ -589,11 +598,6 @@ a.btn{
 .blog-heading h1{
 	padding-bottom:60px;
 }
-/*.blog-heading span{
-	color: #DD6103;
-	font-size: 34px;
-	margin-left:5px;
-}*/
 .blog-content h4 a{
 	font-size: 28px;
 	line-height: 35px;
@@ -947,94 +951,6 @@ a.btn{
 	margin-bottom: 30px;
 }
 /*PRODUCT PAGES CSS*/
-/*SOLUTION PAGES CSS*/
-.solutions-wrap .main-raised{
-	padding-bottom: 40px;
-}
-.solutions-wrap .blog-heading h1, .product-wrap .blog-heading h1{
-	padding: 50px 0 30px;
-}
-.solutions-wrap .blog-heading span, .product-wrap .blog-heading span{
-	display: none;
-}
-.solutions-wrap .carousel{
-	margin-bottom: 60px;
-}
-.solution-carousel h1{
-	color: #434343;
-	letter-spacing: -0.1px;
-}
-.solution-carousel > h1{
-	padding-top: 80px;
-	padding-bottom: 10px;
-}
-.solution-carousel h2{
-	font-size: 22px;
-	line-height: 30px;
-	color: #868686;
-	padding-bottom: 25px;
-}
-.solution-carousel p{
-	color: #606060;
-	line-height: 30px;
-	margin-bottom: 25px;
-}
-.solution-carousel p:last-of-type{
-	margin-bottom: 65px;
-}
-/*.solution-ad{
-	padding-bottom:60px;
-}*/
-.ad-image{
-	margin-bottom: 60px;
-	padding-top: 5px;
-}
-.solution-ad h1{
-	padding: 60px 0 30px;
-}
-.carousel-inner{
-	border-radius: 5px;
-	box-shadow: 0px 0px 8px 2px #e0dcdc;
-	-webkit-box-shadow:0px 0px 8px 2px #e0dcdc;
-}
-.solution-divider{
-	border-top:1px solid #cccccc;
-}
-.ad-content h2, .ad-content h3{
-	font-size: 22px;
-	line-height: 32px;
-	color: #606060;
-	letter-spacing: -0.17px;
-	padding: 60px 0 15px;
-}
-.ad-content h3{
-	padding-top: 0px;
-}
-.ad-content p{
-	color: #606060;
-	line-height: 31px;
-	letter-spacing: -0.15px;
-	margin-bottom: 40px;
-}
-.ad-content p:last-child{
-	margin-bottom: 50px;
-}
-.ad-content ul{
-	margin-bottom: 0px;
-	padding-bottom: 30px;
-}
-.ad-content ul li{
-	font-size: 16px;
-	line-height: 30px;
-	color: #606060;
-}
-.ad-content ul p{
-	margin-bottom: 30px!important;
-}
-.ad-content{
-	display: block!important;
-}
-/*SOLUTION PAGES CSS
 /*FOOTER CSS*/
 footer{
 	padding: 40px 0 0px;
@@ -1148,7 +1064,7 @@ footer ul li a:first-child{
 	}
 }
 @media(min-width: 992px){
-	.service-heading h1{
+	.service-heading h2{
 		display: inline-block;
 	}
 	.contact-form .form{
@@ -1164,7 +1080,7 @@ footer ul li a:first-child{
 		width: 80%;
 		height: 2px;
 		bottom: 0px;
-		transition: 1s cubic-bezier(0.55, 0.06, 0.68, 0.19)
+		transition: 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);
 	}
 	.navbar .navbar-nav .nav-item .nav-link.nav-btn span:hover:after{
 		background-color: transparent;
@@ -1437,15 +1353,9 @@ footer ul li a:first-child{
 	.toronto-office{
 		background-position-x: 50%;
 	}
-	.ad-image{
-		margin-bottom: 100px;
-	}
 	.card .card-header.card-header-image .colored-shadow {
 	     -webkit-transform: scale(1); 
 	    transform: scale(1);
-	}
-	.solutions-wrap .carousel{
-		margin-bottom:100px;
 	}
 	.hero-text h1{
 		font-size: 46px;
@@ -1487,22 +1397,13 @@ footer ul li a:first-child{
 	.specification-docs h1{
 		font-size: 32px;
 	}
-	.solution-carousel > h1{
-		padding-top: 50px;
-	}
-	.solution-ad h1{
-		padding: 30px 0;
-	}
-	.solution-carousel p:last-of-type{
-		margin-bottom: 35px;
-	}
 	.docs-aside{
 		display: none;
 	}
 	.document-wrap{
 		padding: 50px 0;
 	}
-	.service-heading h1{
+	.service-heading h2{
 		margin-bottom: 5px;
 	}
 }
