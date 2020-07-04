@@ -70,7 +70,7 @@
 	                <div class="col-md-6">
 	                    <div class="orange-line"></div>
 	                    <div class="app-content">
-	                        <h1>Applications</h1>
+	                        <h2 class="display-h1">Applications</h2>
 	                        <p>
 	                            <a href=""> <span><img class="lazy" data-src="assets/img/products/icons/horizontal-branding-icon_green.svg" alt="horizontal branding icon green"></span>Horizontal Branding & Wayfinding</a>
 	                        </p>
@@ -95,7 +95,7 @@
 	        <div class="row">
 	            <div class="col-md-12 product-gallery">
 	                <div class="orange-line"></div>
-	                <h1 class="slate-gray">Gallery</h1>
+	                <h2 class="display-h1 slate-gray">Gallery</h2>
 
 	                <div class="row">
 	                    <div class="col-md-4">
@@ -190,7 +190,7 @@
 	        <div class="row">
 	            <div class="col-md-8 product-benefits">
 	                <div class="orange-line"></div>
-	                <h1 class="slate-gray">Features & Benefits</h1>
+	                <h2 class="display-h1 slate-gray">Features & Benefits</h2>
 	                <h5>Engineered with safety, durability and aesthetics in mind, TrafficPatterns® is the surface solution designed to:</h5>
 
 	                <div class="feature-highlights">
@@ -207,7 +207,7 @@
 	        <div class="row">
 	            <div class="col-md-12 data-specs">
 	                <div class="orange-line"></div>
-	                <h1 class="slate-gray">Data & Specs</h1>
+	                <h2 class="display-h1 slate-gray">Data & Specs</h2>
 	                <h5>We have provided all the documentation you need to get set up</h5>
 	            </div>
 	        </div>
@@ -253,7 +253,7 @@
 	        <div class="row">
 	            <div class="col-md-8 prod-readmore">
 	                <div class="orange-line"></div>
-	                <h1 class="slate-gray">Read More</h1>
+	                <h2 class="display-h1 slate-gray">Read More</h2>
 	                <div class="readmore-content">
 	                    <h5>High Skid/Slip Resistant:</h5>
 	                    <p>Skid resistance is maximized by adding anti-skid elements to the surface and the intermix of the material at the time of manufacturing. As the marking wears, new anti-skid elements are exposed.</p>

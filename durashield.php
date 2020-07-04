@@ -69,7 +69,7 @@
                 <div class="col-md-6">
                     <div class="orange-line"></div>
                     <div class="app-content">
-                        <h1>Applications</h1>
+                        <h2 class="display-h1">Applications</h2>
                         <p>
                             <a href=""> <span><img class="lazy" data-src="assets/img/products/icons/commercial-parking-lots-icon_green.svg" alt="commercial parking lots icon green"></span>Commercial Parking Lots</a>
                         </p>
@@ -94,7 +94,7 @@
         <div class="row">
             <div class="col-md-12 product-gallery">
                 <div class="orange-line"></div>
-                <h1 class="slate-gray">Gallery</h1>
+                <h2 class="display-h1 slate-gray">Gallery</h2>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -134,7 +134,7 @@
         <div class="row">
             <div class="col-md-8 product-benefits">
                 <div class="orange-line"></div>
-                <h1 class="slate-gray">Features & Benefits</h1>
+                <h2 class="display-h1 slate-gray">Features & Benefits</h2>
                 <h5>Cooler Pavements Mean Safer More Comfortable Pavements</h5>
 
                 <div class="feature-highlights">
@@ -152,7 +152,7 @@
         <div class="row">
             <div class="col-md-12 data-specs">
                 <div class="orange-line"></div>
-                <h1 class="slate-gray">Data & Specs</h1>
+                <h2 class="display-h1 slate-gray">Data & Specs</h2>
                 <h5>We have provided all the documentation you need to get set up</h5>
             </div>
         </div>

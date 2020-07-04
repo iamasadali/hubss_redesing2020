@@ -69,7 +69,7 @@
                 <div class="col-md-6">
                     <div class="orange-line"></div>
                     <div class="app-content">
-                        <h1>Applications</h1>
+                        <h2 class="display-h1">Applications</h2>
                         <p>
                             <a href=""> <span><img class="lazy" data-src="assets/img/products/icons/traffic-caliming-and-streetscapes-icon_green.svg" alt="traffic caliming and streetscapes icon"></span>Traffic Calming &amp; Streetscapes</a>
                         </p>
@@ -106,7 +106,7 @@
         <div class="row">
             <div class="col-md-12 product-gallery">
                 <div class="orange-line"></div>
-                <h1 class="slate-gray">Gallery</h1>
+                <h2 class="display-h1 slate-gray">Gallery</h2>
 
                 <div class="row">
                     <div class="col-md-4">
@@ -201,7 +201,7 @@
         <div class="row">
             <div class="col-md-8 product-benefits">
                 <div class="orange-line"></div>
-                <h1 class="slate-gray">Features & Benefits</h1>
+                <h2 class="display-h1 slate-gray">Features & Benefits</h2>
                 <h5>Developed in Canada with balanced performance characteristics in mind. StreetBond150 Pavement Coatings for Asphalt and Concrete ensure quality results and enduring beauty for your projects for years to come.</h5>
 
                 <div class="prod-readmore mt-0">
@@ -236,7 +236,7 @@
         <div class="row">
             <div class="col-md-12 data-specs">
                 <div class="orange-line"></div>
-                <h1 class="slate-gray">Data & Specs</h1>
+                <h2 class="display-h1 slate-gray">Data & Specs</h2>
                 <h5>We have provided all the documentation you need to get set up</h5>
             </div>
         </div>

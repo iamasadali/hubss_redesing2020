@@ -139,7 +139,6 @@ a.btn{
 	border-radius: 22px;
 	text-transform: inherit;
 	box-shadow: 0 2px 4px 0 rgba(91,91,91,0.5);
-	/*border:1px solid #DD6103!important;*/
 }
 .btn:focus{
 	background-color:#DD6103;
@@ -163,6 +162,8 @@ a.btn{
 	letter-spacing: 2px;
 	margin:10px 0;
 }
+.slate-gray{}
+.ghost-in-machine{background-color: #F7F7F7;}
 /*GENERAL CSS END*/
 /*SCROLL TOP CSS*/
 .scroll-top {
@@ -231,7 +232,6 @@ a.btn{
 	padding:3px 0;
 }
 .navbar-brand.logo-scroll{
-	/*height: auto;*/
 	top: -7px;
 }
 .navbar .navbar-nav .nav-item .nav-link{
@@ -588,10 +588,12 @@ a.btn{
 /*RING ANIMATION CSS*/
 /*SERVICES CANADA END*/
 /*BLOG SECTIONS CSS*/
-.blog-section, .sayhi-bg{
-	background: #2c2c2c;
+.product-profiles{
+	background: url('../img/say-hi-background-image.jpg');
+	background-attachment: fixed;
+	background-size: cover;
 }
-.blog-section .main-raised{
+.product-profiles .main-raised{
 	margin-top: 0;
 	padding:100px 0;
 }
@@ -605,8 +607,8 @@ a.btn{
 	color: #393939;
 	display: inline-block;
 }
-.vcard.author{
-	display: none;
+.read-more span{
+	display:none;
 }
 .author-name{
 	color: #393939;
@@ -632,20 +634,10 @@ a.btn{
 	opacity: .75;
 }
 .blog-content h6 a{
-	/*
-	font-size: 18px;*/
 	display: none;
 }
 .blog-content a{
 	color: #DD6103;
-}
-.blog-content p, .blog-content h3{
-	font-size: 16px;
-	line-height: 25px;
-	color: #606060;
-}
-.blog-content h4{
-	color: #757575;
 }
 /*SAY HI CSS*/
 .sayhi-wrap{
@@ -882,9 +874,6 @@ a.btn{
 }
 /*SUPPORT DOCS CSS*/
 /*PRODUCT PAGES CSS*/
-.product-wrap .main-raised{
-	padding: 100px 0;
-}
 .product-logo{
 	padding-bottom: 40px;
 }
@@ -949,6 +938,90 @@ a.btn{
 .gallery-caption h5{
 	margin-top: 40px;
 	margin-bottom: 30px;
+}
+/*LIGHT BOX EFFECT*/
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000000db;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 1200px;
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.single-slide{
+  display: none;
+}
+/* Next & previous buttons */
+.previous-slide,
+.next-slide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.product-gallery .col-md-4{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom:20px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.demo {
+  opacity: 0.6;
+}
+.demo:hover {
+  opacity: 1;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
 }
 /*PRODUCT PAGES CSS*/
 /*FOOTER CSS*/
@@ -1104,13 +1177,6 @@ footer ul li a:first-child{
 		margin-top: 7px;
 	}
 }
-@media(min-width: 1140px){
-	.blog-section, .sayhi-bg{
-	background: linear-gradient(to left, rgb(46, 46, 46), #2C2C2C);
-	background: -webkit-linear-gradient(left, rgb(46, 46, 46), #2C2C2C);
-	margin-bottom: -2px;
-	}
-}
 @media(min-width:1199.98px){
 	.service-map img{display: none;}
 	.gallery-cell{
@@ -1118,7 +1184,7 @@ footer ul li a:first-child{
 	}
 }
 @media (min-width: 1200px){
-	.blog-section .container{
+	.product-profiles .container{
 		max-width: 1020px;
 	}
 	.contact-form .form{
@@ -1360,7 +1426,7 @@ footer ul li a:first-child{
 	.hero-text h1{
 		font-size: 46px;
 	}
-	.btn-submit, .blog-section .product-btn, .service-canada .ghost-btn, .products .product-btn{
+	.btn-submit, .product-profiles .product-btn, .service-canada .ghost-btn, .products .product-btn{
 		width: 100%!important;
 	}
 	.submit{
@@ -1369,12 +1435,8 @@ footer ul li a:first-child{
 	.products{
 		padding-bottom: 50px;
 	}
-	.blog-section .main-raised{
+	.product-profiles .main-raised{
 		padding:20px 0 50px;
-	}
-	.blog-section .blog-heading h1{
-		padding-bottom: 20px;
-		font-size: 28px;
 	}
 	.navbar .navbar-brand{
 		margin-right: 0px;
@@ -1388,9 +1450,6 @@ footer ul li a:first-child{
 	.solutions .row.pb-90{
 		padding-bottom: 10px;
 	}
-	.product-wrap .main-raised{
-		padding-top: 50px;
-	}
 	.contact-team h2{
 		font-size: 28px;
 	}
@@ -1403,23 +1462,10 @@ footer ul li a:first-child{
 	.document-wrap{
 		padding: 50px 0;
 	}
-	.service-heading h2{
-		margin-bottom: 5px;
-	}
 }
 @media(max-width: 425px){
-	
-	h1, #toronto, .service-heading .typed-cursor{
-		font-size: 32px!important;
-		line-height: 40px!important; 
-	}
 	.navbar .navbar-brand.logo-simple{
 		width: 235px;
-	}
-}
-@media(max-width: 400px){
-	.hero-text h1{
-		font-size: 38px
 	}
 }
 /*MAX WIDTH QUERIES END*/
