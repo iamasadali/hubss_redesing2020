@@ -226,7 +226,7 @@ a.btn{
 }
 /*HEADER  CSS*/
 .banner-text.page-header{
-	height: 90vh;
+	height: 100vh;
 }
 .nav-up {
     top: -105px;
@@ -289,6 +289,7 @@ a.btn{
 }
 .products-dd .dropdown-item span{
 	color: #868686;
+	font-family: "AvenirNextLTPro-Regular";
 	
 }
 .products-dd .dropdown-item:hover span, .get-touch-dd .dropdown-item:hover span{
@@ -890,9 +891,9 @@ a.btn{
 /*SUPPORT DOCS CSS*/
 /*PRODUCT PAGES CSS*/
 .product-top {
-	padding-top: 130px;
+	padding-top: 100px;
 }
-.product-logo, .app-content h2{
+.product-logo, .app-content h2, .product-gallery h2{
 	margin-bottom:60px;
 }
 .product-graphic img{
@@ -977,10 +978,16 @@ a.btn{
 .modal-content .next-slide:hover {
  	opacity: 1;
 }
+.product-gallery{
+	padding:100px 0 80px;
+}
 .product-gallery .col-md-4{
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom:20px;
+}
+.product-details{
+	padding:100px 0;
 }
 .hover-shadow:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -1122,7 +1129,7 @@ footer ul li a:first-child{
 	.navbar .navbar-nav .nav-item .nav-link.nav-btn span:hover:after{
 		background-color: transparent;
 	}
-	.solutions-wrap .container, .product-wrap .container{
+	.product-wrap .container{
 		max-width: 960px;
 	}
 	.products-dd{
