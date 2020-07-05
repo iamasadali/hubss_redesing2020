@@ -16,7 +16,8 @@ html{
 	scroll-behavior: smooth;
 }
 body{
-	color: #333333;
+	background-color: #ffffff;
+	font-family: "AvenirNextLTPro-Regular";
 }
 h2,h3,h4,h5,h6{
 	font-family: "AvenirNextLTPro-Bold";
@@ -27,27 +28,28 @@ h1, .display-h1{
 	line-height: 57px;
 	letter-spacing: 1.5px;
 	font-family: "PlayfairDisplay-Regular";
+	font-feature-settings: 'liga', 'clig';
 }
 h3{
 	font-size: 24px;
-	line-height: 30px;
+	line-height: 36px;
 	letter-spacing: -0.07px;
 	color: #6E6E6E;
 }
 h4{
 	font-size: 20px;
-	line-height: 30px;
+	line-height: 35px;
 	letter-spacing: 0.48px;
 }
 h5{
 	font-size: 18px;
-	line-height: 21px;
-	letter-spacing: 0.4px;
+	line-height: 27px;
+	letter-spacing: 0.36px;
 }
 p{
 	font-size: 18px;
 	line-height: 27px;
-	letter-spacing: 0.01px;
+	letter-spacing: -0.54px;
 	color: #333333;
 	margin: 0px;
 }
@@ -57,12 +59,26 @@ a.btn{
 	font-family: "AvenirNextLTPro-Bold";
 	font-size: 14px;
 }
+.prod-hero-btn{
+	background: #008489;
+	border-radius: 233px;
+	text-transform: capitalize;
+	box-shadow: none;
+}
+.prod-hero-btn:hover{
+	background: #008489;
+}
 .orange-color{
 	color: #dd6103!important;
 }
 .dropdown-item.active, .dropdown-item:active {
 	background-color: #DD6103;
 	color: #ffffff!important;
+}
+.orange-line{
+	height: 1px;
+	background-color: #DD6103;
+	width: 150px;
 }
 /*margin and padding*/
 .mt-20{
@@ -162,7 +178,7 @@ a.btn{
 	letter-spacing: 2px;
 	margin:10px 0;
 }
-.slate-gray{}
+.slate-gray{color: #484848;}
 .ghost-in-machine{background-color: #F7F7F7;}
 /*GENERAL CSS END*/
 /*SCROLL TOP CSS*/
@@ -210,9 +226,6 @@ a.btn{
 .banner-text.page-header{
 	height: 90vh;
 }
-/*header{
-	padding-top: 70px;
-}*/
 .nav-up {
     top: -105px;
 }
@@ -241,6 +254,7 @@ a.btn{
 	text-transform: inherit;
 	position: relative;
 	transition: .2s all;
+	font-family: "AvenirNextLTPro-Bold";
 }
 .nav-item .nav-link.nav-btn i{
     transform: rotateY(180deg);
@@ -269,6 +283,7 @@ a.btn{
 	font-size: 14px;
 	color: #626262;
 	line-height: 26px;
+	font-family: "AvenirNextLTPro-Bold";
 }
 .products-dd .dropdown-item span{
 	color: #868686;
@@ -874,19 +889,31 @@ a.btn{
 }
 /*SUPPORT DOCS CSS*/
 /*PRODUCT PAGES CSS*/
-.product-logo{
-	padding-bottom: 40px;
+.product-top {
+	padding:130px 0;
 }
+.product-logo, .app-content h2{
+	margin: 60px 0;
+}
+.product-graphic img{
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.product-info h5{
+	color: #767676;
+}
+.product-info p{
+	margin:30px 0;
+}
+.product-info p:last-of-type{margin-bottom:0px;}
+.app-content h2{color: #484848};
+/**/
 .product-info h2{
 	font-size: 24px;
 	line-height: 31px;
 	color: #757575;
 	letter-spacing: -0.14px
 }
-.product-info p{
-	margin:20px 0;
-}
-.product-info ul, .product-video 
+.product-info ul, .product-video{
 	font-size: 16px;
 	padding-left: 30px;
 	text-transform: capitalize;
@@ -1150,7 +1177,8 @@ footer ul li a:first-child{
 		content: "";
 		background-color: #dd6103;
 		position: absolute;
-		width: 80%;
+		width: 100%;
+		left: 0;
 		height: 2px;
 		bottom: 0px;
 		transition: 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);

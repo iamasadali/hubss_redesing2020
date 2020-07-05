@@ -64,7 +64,7 @@
                 <div class="col-md-6">
                     <div class="orange-line"></div>
                     <div class="app-content">
-                        <h2>Applications</h2>
+                        <h2 class="display-h1">Applications</h2>
                         <p>
                             <a href=""> <span><img class="lazy" data-src="assets/img/products/icons/orange-icon_high-performance-crosswalks-green.svg" alt="orange icon high performance crosswalks green"></span>High Performance Crosswalks</a>
                         </p>
