@@ -24,7 +24,7 @@ h2,h3,h4,h5,h6{
 	margin:0px;
 }
 h1, .display-h1{
-	font-size: 72px;
+	font-size: 42px;
 	line-height: 56px;
 	letter-spacing: 1.44px;
 	font-family: "PlayfairDisplay-Regular";
@@ -500,6 +500,8 @@ a.btn{
 	font-size: 54px;
 	line-height: 60px;
 	letter-spacing: 1.5px;
+	font-family: "PlayfairDisplay-Regular";
+	font-feature-settings: 'liga', 'clig';
 }
 .service-heading .typed-cursor{
 }
@@ -654,7 +656,7 @@ a.btn{
 	display: none;
 }
 .blog-content a{
-	color: #DD6103;
+	color: #008489;
 }
 /*SAY HI CSS*/
 .sayhi-wrap{
@@ -862,7 +864,7 @@ a.btn{
 .specification-docs p{
 	margin-bottom: 10px
 }
-.specification-docs h5, .product-applications h5, .product-docs h5, .product-video h5, .gallery-caption h5{
+.specification-docs h5{
 	font-size: 18px;
 	line-height: 30px;
 	color: #7E7E7E;
@@ -872,9 +874,6 @@ a.btn{
 }
 .specification-docs h5 img, .product-docs h5 img{
 		margin-right: 10px;
-}
-.product-pdf{
-	margin: 5px 0;
 }
 .product-pdf a{
 	font-size: 16px;
@@ -906,80 +905,21 @@ a.btn{
 	margin:30px 0;
 }
 .product-info p:last-of-type{margin-bottom:0px;}
-.app-content h2{color: #484848};
-.app-content p span{
+.app-content h2{color: #484848}
+.app-content span{
 	display:inline-block;
 	width: 70px;
 }
-.app-content p a{color: #767676};
-/**/
-.product-info h2{
-	font-size: 24px;
-	line-height: 31px;
-	color: #757575;
-	letter-spacing: -0.14px
-}
-.product-info ul, .product-video{
-	font-size: 16px;
-	padding-left: 30px;
-	text-transform: capitalize;
-}
-.product-video ul{
-	margin-top: 30px;
-}
-.product-video p{
-	margin-bottom: 30px;
-}
-.product-video p:last-child, .doc-dropdown a:last-child, .install-content p:last-child{
-	margin-bottom: 0px;
-}
-.product-video h2{
-	font-size: 18px;
-	line-height: 31px;
-	color: #757575;
-	margin-bottom: 30px;
-}
-.product-applications, .product-docs, .product-video{
-	padding-top: 60px;
-}
-.product-applications p:first-of-type{
-	margin-top: 30px;	
-}
-.product-applications p {
-	margin-bottom: 5px;
-}
-.product-applications p a{
-	color: #333333;
-	display: inline-block;
-	text-decoration: underline;
-}
-.product-applications p span, .app-guide p span{
-	display: inline-block;
-	width: 60px;
-}
-.product-applications img, .app-guide img{
-	padding-bottom: 10px;
-}
-.product-iframe{
-	margin-bottom: 60px;
-}
-.product-iframe iframe{
-	width: 500px;
-	height: 350px;
-	margin-top: 30px;
-}
-.gallery-caption h5{
-	margin-top: 40px;
-	margin-bottom: 30px;
-}
+.app-content p a{color: #767676}
+
 /*LIGHT BOX EFFECT*/
 
 /* The Modal (background) */
-.modal.lightbox-wrap{
+.lightbox-wrap.modal{
 	display: none;
 	position: fixed;
 	z-index: 9999;
-	padding-top: 0px;
+	padding-top: 100px;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -990,7 +930,7 @@ a.btn{
 /* Modal Content */
 .modal-content {
 	position: relative;
-	background-color: #fefefe;
+	background-color: transparent;
 	margin: auto;
 	padding: 0;
 	width: 80%;
@@ -999,15 +939,16 @@ a.btn{
 /* The Close Button */
 .lightbox-wrap .close{
 	color: #ffffff!important;
-	position: absolute;
-	top: 10px;
-	right: 25px;
-	font-size: 35px;
-	font-weight: bold;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    font-size: 60px;
+    opacity: 1;
 }
 .lightbox-wrap .close:hover, .lightbox-wrap .close:focus{
 	text-decoration: none;
 	cursor: pointer;
+	opacity: 0.7;
 }
 .single-slide{
   display: none;
@@ -1019,9 +960,10 @@ a.btn{
 	top: 50%;
 	width: auto;
 	padding: 0 16px;
-	margin-top: -50px;
-	color: #ffffff!important;
-	font-size: 50px;
+	margin-top: -25px;
+	color: #fff!important;
+	opacity: 0.7;
+	font-size: 30px;
 	transition: 0.6s ease;
 	user-select: none;
 	-webkit-user-select: none;
@@ -1032,8 +974,8 @@ a.btn{
 }
 /* On hover, add a black background color with a little bit see-through */
 .modal-content .previous-slide:hover,
-.modal-content .next-slide;hover {
-  	background-color: rgba(0, 0, 0, 0.8);
+.modal-content .next-slide:hover {
+ 	opacity: 1;
 }
 .product-gallery .col-md-4{
 	padding-left: 10px;
@@ -1375,10 +1317,6 @@ footer ul li a:first-child{
 	
 }
 @media(max-width: 575.98px){
-	h1, #toronto, .service-heading .typed-cursor{
-		font-size: 42px!important;
-		line-height: 48px!important;
-	}
 	.dp-sm{
 		display: block!important;
 	}
