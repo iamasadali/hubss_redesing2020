@@ -24,9 +24,9 @@ h2,h3,h4,h5,h6{
 	margin:0px;
 }
 h1, .display-h1{
-	font-size: 38px;
-	line-height: 57px;
-	letter-spacing: 1.5px;
+	font-size: 72px;
+	line-height: 56px;
+	letter-spacing: 1.44px;
 	font-family: "PlayfairDisplay-Regular";
 	font-feature-settings: 'liga', 'clig';
 }
@@ -53,6 +53,7 @@ p{
 	color: #333333;
 	margin: 0px;
 }
+a, a:hover{color: unset;}
 a.btn{
 	height: 45px;
 	line-height: 22px;
@@ -79,6 +80,7 @@ a.btn{
 	height: 1px;
 	background-color: #DD6103;
 	width: 150px;
+	margin-bottom: 30px;
 }
 /*margin and padding*/
 .mt-20{
@@ -821,7 +823,6 @@ a.btn{
 .doc-dropdown a{
 	display: block;
 	font-size: 16px;
-	
 	color: #626262;
 	letter-spacing: -0.07px;
 	margin-bottom:9px;
@@ -890,10 +891,10 @@ a.btn{
 /*SUPPORT DOCS CSS*/
 /*PRODUCT PAGES CSS*/
 .product-top {
-	padding:130px 0;
+	padding-top: 130px;
 }
 .product-logo, .app-content h2{
-	margin: 60px 0;
+	margin-bottom:60px;
 }
 .product-graphic img{
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -906,6 +907,11 @@ a.btn{
 }
 .product-info p:last-of-type{margin-bottom:0px;}
 .app-content h2{color: #484848};
+.app-content p span{
+	display:inline-block;
+	width: 70px;
+}
+.app-content p a{color: #767676};
 /**/
 .product-info h2{
 	font-size: 24px;
@@ -969,86 +975,74 @@ a.btn{
 /*LIGHT BOX EFFECT*/
 
 /* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background: #000000db;
+.modal.lightbox-wrap{
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	padding-top: 0px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #000000eb;
 }
 /* Modal Content */
 .modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 80%;
-  max-width: 1200px;
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 80%;
+	max-width: 1200px;
 }
 /* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+.lightbox-wrap .close{
+	color: #ffffff!important;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
 }
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
+.lightbox-wrap .close:hover, .lightbox-wrap .close:focus{
+	text-decoration: none;
+	cursor: pointer;
 }
 .single-slide{
   display: none;
 }
 /* Next & previous buttons */
-.previous-slide,
-.next-slide {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+.modal-content .previous-slide, .modal-content .next-slide {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 0 16px;
+	margin-top: -50px;
+	color: #ffffff!important;
+	font-size: 50px;
+	transition: 0.6s ease;
+	user-select: none;
+	-webkit-user-select: none;
 }
 /* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+.modal-content .next-slide{
+	right: 0;
 }
 /* On hover, add a black background color with a little bit see-through */
+.modal-content .previous-slide:hover,
+.modal-content .next-slide;hover {
+  	background-color: rgba(0, 0, 0, 0.8);
+}
 .product-gallery .col-md-4{
 	padding-left: 10px;
 	padding-right: 10px;
 	margin-bottom:20px;
 }
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.demo {
-  opacity: 0.6;
-}
-.demo:hover {
-  opacity: 1;
-}
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.3s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
 }
 /*PRODUCT PAGES CSS*/
 /*FOOTER CSS*/
