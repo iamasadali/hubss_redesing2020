@@ -44,7 +44,7 @@
 
 <section class="product-top ghost-in-machine">
     <div class="container">
-    	<div class="row ">
+    	<div class="row">
     		<div class="col-md-4 product-graphic">
     			<img src="assets/img/products/streetbond-150/StreetBond-color-coating-and-sealing-for-asphalt-and-concrete.jpg" class="img-fluid" alt="StreetBond color coating and sealing for asphalt and concrete">
     		</div>
