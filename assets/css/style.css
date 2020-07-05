@@ -874,7 +874,7 @@ a.btn{
 	padding-bottom: 6px;
 }
 .specification-docs h5 img, .product-docs h5 img{
-		margin-right: 10px;
+	margin-right: 10px;
 }
 .product-pdf a{
 	font-size: 16px;
@@ -906,6 +906,7 @@ a.btn{
 	margin:30px 0;
 }
 .product-info p:last-of-type{margin-bottom:0px;}
+.product-app{margin-top:100px;}
 .app-content h2{color: #484848}
 .app-content span{
 	display:inline-block;
