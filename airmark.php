@@ -45,7 +45,7 @@
 
 <section class="product-top ghost-in-machine">
     <div class="container">
-        <div class="row py-130">
+        <div class="row">
             <div class="col-md-4 product-graphic">
                 <img src="assets/img/products/airmark/AirMark-horizontal-airport-runway-markings.jpg" class="img-fluid" alt="AirMark horizontal airport runway markings">
             </div>

@@ -43,7 +43,7 @@
 
 <section class="product-top ghost-in-machine">
     <div class="container">
-    	<div class="row py-130">
+    	<div class="row">
     		<div class="col-md-4 product-graphic">
     			<img src="assets/img/products/trafficpatterns-XD/TrafficPatternsXD-decorative-asphalt-crosswalk-on-bus-lane.jpg" class="img-fluid" alt="TrafficPatternsXD decorative asphalt crosswalk on bus lane">
     		</div>

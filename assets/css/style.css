@@ -143,10 +143,8 @@ a.btn{
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
-.wrap-1500{
-	width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+.row.py-130{
+	padding:130px 0;
 }
 .form-control:focus{
 	box-shadow: none;
@@ -891,7 +889,7 @@ a.btn{
 /*SUPPORT DOCS CSS*/
 /*PRODUCT PAGES CSS*/
 .product-top {
-	padding-top: 100px;
+	padding-top: 120px;
 }
 .product-logo, .app-content h2, .product-gallery h2{
 	margin-bottom:60px;
@@ -906,7 +904,7 @@ a.btn{
 	margin:30px 0;
 }
 .product-info p:last-of-type{margin-bottom:0px;}
-.product-app{margin-top:100px;}
+.product-app{margin-top:120px;}
 .app-content h2{color: #484848}
 .app-content span{
 	display:inline-block;

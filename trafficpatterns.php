@@ -44,7 +44,7 @@
 
 	<section class="product-top ghost-in-machine">
 	    <div class="container">
-	    	<div class="row py-130">
+	    	<div class="row">
 	    		<div class="col-md-4 product-graphic">
 	    			<img src="assets/img/products/trafficpatterns/TraficPatterns-ubc-decorative-crosswalk.jpg" class="img-fluid" alt="TraficPatterns ubc decorative crosswalk">
 	    		</div>
